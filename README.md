@@ -1,2 +1,2 @@
 # css_excercises
-This folder contains CSS excercises from The Odin Project.
+This folder contains CSS exercises from The Odin Project.
