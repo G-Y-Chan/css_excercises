@@ -1,3 +1,4 @@
+/* Main green box */
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -6,24 +7,57 @@
     padding: 8px;
 }
 
-.flex-container-2 {
+/* First blue box at the top of .flex-contaner div */
+.one {
     display: flex;
     background: lightblue;
     border: 4px solid blue;
     height: 100px;
-    margin: 8px;
-    flex: 1;
-}
-  
-/* this selector selects all divs inside of .flex-container */
-.flex-container div {
-    background: lightblue;
-    border: 4px solid blue;
-    height: 100px;
-    margin: 8px;
+    padding: 8px;
     flex: 1;
 }
 
-.flex-container .two {
-    height: 200px;
+/* Orange boxes inside blue .flex-container-2 */
+.one .flex-container-2 {
+    display: flex;
+    background: rgb(255, 203, 107);
+    border: 4px solid orange;
+    height: 100px;
+    padding: 8px;
+    margin: 4px;
+    flex: 1;
+}
+
+/* Red boxes inside orange .flex-container-3 */
+.flex-container-2 .flex-container-3 {
+    background: lightcoral;
+    border: 4px solid red;
+    margin: 0px;
+    flex: 1;
+}
+
+/* Transparent div to contain 3 smaller red divs */
+.two {
+    display: flex;
+    background-color: lightgreen;
+    padding: 0px;
+    margin: 8px;
+}
+
+/* Nested transparent div */
+.two .flex-container-4 {
+    background: lightcoral;
+    border: 4px solid red;
+    margin: 0px;
+    flex: 1;
+}
+
+/* Last blue box at the bottom of .flex-contaner div */
+.three {
+    display: flex;
+    background: lightblue;
+    border: 4px solid blue;
+    height: 100px;
+    padding: 8px;
+    flex: 1;
 }
